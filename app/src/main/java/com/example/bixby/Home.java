@@ -44,7 +44,7 @@ public class Home extends AppCompatActivity {
                     bixby("How are you");
 
                 }
-                else if(output.equalsIgnoreCase("fine") || output.equalsIgnoreCase("i am fine")|| output.equalsIgnoreCase("i am good")){
+                else if(output.equalsIgnoreCase("fine") || output.equalsIgnoreCase("i am fine")|| output.equalsIgnoreCase("i am good")|| output.equalsIgnoreCase("good")){
 
                     bixby("Thats very good to hear!!!");
                 }
@@ -54,7 +54,7 @@ public class Home extends AppCompatActivity {
                     bixby("Be patient and face your problems strongly!!!");
                 }
 
-                else if(output.equalsIgnoreCase("How are you?") || output.equalsIgnoreCase("How do you do?")|| output.equalsIgnoreCase("How you doin?")){
+                else if(output.equalsIgnoreCase("How are you?") || output.equalsIgnoreCase("how are you")|| output.equalsIgnoreCase("How do you do?")|| output.equalsIgnoreCase("How you doin?")){
 
                     bixby("I am very good.");
                 }
@@ -62,9 +62,19 @@ public class Home extends AppCompatActivity {
                 else if(output.equalsIgnoreCase("How old are you?") || output.equalsIgnoreCase("Whats your age?")|| output.equalsIgnoreCase("age?")){
 
                     bixby("I am only 16 Year's old. SWEET 16 :))) ");
+                    bixby("What about you? Please enter number only");
+                    if(Integer.parseInt(output)<= 40){
+                        bixby("You are still too young and beautiful ");
+
+                    }
+                    else if(Integer.parseInt(output)> 40){
+                        bixby("You are not too old. Old is GOLD :)) ");
+
+                    }
+
                 }
 
-                else if(output.equalsIgnoreCase("set alarm") || output.equalsIgnoreCase("set reminder")){
+                else if(output.equalsIgnoreCase("set alarm")||output.equalsIgnoreCase("set alarm ") || output.equalsIgnoreCase("set reminder")|| output.equalsIgnoreCase("set reminder ")){
 
                     Intent startIntent=new Intent(getApplicationContext(),MainAlarm.class);
                     startIntent.putExtra("com.example.bixby.SOMETHING","Hello");
