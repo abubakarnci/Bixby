@@ -59,7 +59,7 @@ public class Home extends AppCompatActivity {
                     bixby("I am very good.");
                 }
 
-                else if(output.equalsIgnoreCase("How old are you?") || output.equalsIgnoreCase("Whats your age?")|| output.equalsIgnoreCase("age?")){
+                else if(output.equalsIgnoreCase("How old are you?")||(output.equalsIgnoreCase("How old are you") || output.equalsIgnoreCase("Whats your age?")|| output.equalsIgnoreCase("age?")){
 
                     bixby("I am only 16 Year's old. SWEET 16 :))) ");
                     bixby("What about you? Please enter number only");
