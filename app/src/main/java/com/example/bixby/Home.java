@@ -62,17 +62,18 @@ public class Home extends AppCompatActivity {
                 else if(output.equalsIgnoreCase("How old are you?")||output.equalsIgnoreCase("How old are you") || output.equalsIgnoreCase("Whats your age?")|| output.equalsIgnoreCase("age?")){
 
                     bixby("I am only 16 Year's old. SWEET 16 :))) ");
-                    bixby("What about you? /n Please enter numbers only");
-                    if(Integer.parseInt(output)<= 40){
-                        bixby("You are still too young and beautiful ");
+                    //bixby("What about you? \nPlease enter numbers only");
 
-                    }
-                    else if(Integer.parseInt(output)> 40){
-                        bixby("You are not too old. Old is GOLD :)) ");
-
-                    }
 
                 }
+                /*else if(Integer.parseInt(output)<= 40){
+                    bixby("You are still too young and beautiful ");
+
+                }
+                else if(Integer.parseInt(output)> 40){
+                    bixby("You are not too old. Old is GOLD :)) ");
+
+                }*/
 
                 else if(output.equalsIgnoreCase("set alarm")||output.equalsIgnoreCase("set alarm ") || output.equalsIgnoreCase("set reminder")|| output.equalsIgnoreCase("set reminder ")){
 
